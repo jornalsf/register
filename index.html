@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration or Sign Up form in HTML CSS | CodingLab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  @font-face {
+    font-family: 'FUTURA55REGULAR';
+    src: url('C:/Users/User/Downloads/Jornal/FUTURA55REGULAR.ttf') format('truetype'); /* Caminho para a fonte .ttf */
+  }
+
+  @font-face {
+    font-family: 'Intrepid';
+    src: url('C:/Users/User/Downloads/Jornal/Intrepid.ttf') format('truetype'); /* Caminho para a fonte .ttf */
+  }
+
+  body,
+  input,
+  button,
+  h2,
+  h3,
+  a {
+    font-family: 'FUTURA55REGULAR', Arial, sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeeee;
+  }
+
+  .wrapper {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #c49743;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    left: -17rem;
+  }
+
+  .wrapper h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 580;
+    color: #000000;
+  }
+
+  .wrapper h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #000000;
+  }
+
+  .wrapper form {
+    margin-top: 40px;
+  }
+
+  .wrapper form .input-box {
+    height: 52px;
+    margin: 18px 9px;
+    /* Ajustado para espaço uniforme */
+    flex-grow: 1;
+    /* Para que ocupem o espaço disponível */
+  }
+
+  form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .input-box input:focus,
+  .input-box input:valid {
+    border-color: #4070f4;
+  }
+
+  form .policy {
+    display: flex;
+    align-items: center;
+  }
+
+  form h3 {
+    color: #313131;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+  .input-box.button a {
+    color: #ffffff;
+    letter-spacing: 1px;
+    border: none;
+    background: #333;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 6px;
+    height: 30px; /* Ajuste a altura da barra conforme necessário */
+    width: 100%;
+    outline: none;
+    padding: 15px 0 10px 0; /* Ajuste o valor do padding conforme necessário */
+    text-align: center;
+}
+
+
+
+  .input-box.button a:hover {
+    background: #575757;
+    color: rgb(0, 0, 0);
+  }
+
+  form .text h3 {
+    color: #333;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  form .text h3 a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  form .text h3 a:hover {
+    text-decoration: underline;
+  }
+
+  #titulo {
+    position: absolute;
+    right: 3rem;
+    font-size: 150px;
+    word-break: break-all;
+  }
+</style>
+
+<body>
+  <div class="wrapper">
+    <h2>Registrar</h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="NOME *" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="E-MAIL *" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="SENHA *" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="CONFIRMAÇÃO DA SENHA *" required>
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>Eu aceito todos os termos e condições</h3>
+      </div>
+      <div class="input-box button">
+        <a href="file:///C:/Users/User/Downloads/Jornal/jornal.html?#">REGISTRAR AGORA</a>
+      </div>
+      <div class="text">
+        <h3>Já tem uma conta? <a href="file:///C:/Users/User/Downloads/Jornal/jornal.html?#">Fazer Login</a></h3>
+      </div>
+    </form>
+  </div>
+
+  <h1 id="titulo">JORNAL <br> SF</h1>
+</body>
+
+</html>
